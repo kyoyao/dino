@@ -1,7 +1,7 @@
 
 <template>
-<!-- <LayoutWeb layoutType=0> -->
-    <head>
+<LayoutWeb layoutType=2>
+    <!-- <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="google-site-verification" content="lmB_ADq3hKqL867Wk7ZlmiDJ2rUn46-Hdh77PMLSLNk" />
@@ -9,11 +9,12 @@
       <title>代樂收 - 服務區域</title>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
-    </head>
+    </head> -->
+
     <body>
     <div class="navbar bg-light fixed-top navbar-box">
         <div class="container-fluid nav-container">
-            <a class="navbar-brand brand-title" href="index.html">
+            <a class="navbar-brand brand-title" href="/">
                 <h1 class="brand-h1 navbar-brand brand-title">代樂收</h1><span class="navbar-subtitle">dinosaur</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,10 +46,7 @@
             <div class="iframe-rwd mb-5">
                 <img class="service-map" src="@/assets/images/map.jpg" />
             </div>
-
         </div>
-
-
     </div>
     <div class="container">
         <div class="w-100">
@@ -107,10 +105,10 @@
         </footer>
     </div>
 </body>
-<!-- </LayoutWeb> -->
+</LayoutWeb>
 </template>
 
-<!-- <script>
+<script>
 import LayoutWeb from "@/components/LayoutWeb.vue";
 export default {
 	name: "Service",
@@ -129,8 +127,9 @@ export default {
 			
 	}
 }
-</script> -->
+</script>
+
 <style scoped>
-    @import '@/assets/styles/style.module.css';
-    @import '@/assets/styles/reset.module.css';
+    /* @import '../assets/styles/style.module.css';
+    @import '../assets/styles/reset.module.css'; */
 </style>

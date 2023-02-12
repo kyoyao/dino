@@ -3,8 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-<!-- <LayoutWeb layoutType=1> -->
-<head>
+<LayoutWeb layoutType=1>
+<!-- <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="lmB_ADq3hKqL867Wk7ZlmiDJ2rUn46-Hdh77PMLSLNk" />
@@ -12,11 +12,12 @@ import { RouterLink, RouterView } from 'vue-router'
     <title>代樂收 - 最貼心的代丟垃圾服務</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-</head>
+</head> -->
+
 <body>
     <div class="navbar bg-light fixed-top navbar-box">
         <div class="container-fluid nav-container">
-            <a class="navbar-brand brand-title" href="index.html">
+            <a class="navbar-brand brand-title" href="/">
                 <h1 class="brand-h1 navbar-brand brand-title">代樂收</h1><span class="navbar-subtitle">dinosaur</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,7 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 <h3 class="brown-font">丟垃圾不方便很困擾?</h3>
             </div>
             <div class="right-content col d-md-flex d-none ">
-                <img src="./assets/images/dinosaur.png" />
+                <img src="@/assets/images/dinosaur.png" />
             </div>          
         </div>
         <div class="dropdown-icon-box">
@@ -216,7 +217,7 @@ import { RouterLink, RouterView } from 'vue-router'
                     創生環保科技股份有限公司 
                 </div>
                 <div class="p-2 line-btn d-flex flex-column flex-md-row d-md-flex align-items-center justify-content-center">
-                    <img class="me-2" src="./assets/images/btn_base.png"/>
+                    <img class="me-2" src="@/assets/images/btn_base.png"/>
                     <span class="fs-7">加入LINE好友</span>
                 </div>
                 <div class="d-flex flex-column flex-md-row d-md-flex mt-2 ">
@@ -246,12 +247,11 @@ import { RouterLink, RouterView } from 'vue-router'
         </footer>
     </div>
 </body>
-<!-- </LayoutWeb> -->
-<RouterView />
+</LayoutWeb>
 </template>
 
 
-<!-- <script>
+<script>
 import LayoutWeb from "@/components/LayoutWeb.vue";
 export default {
 	name: "Index",
@@ -270,10 +270,10 @@ export default {
 			
 	}
 }
-</script> -->
-<style scoped>
+</script>
+<!-- <style scoped>
     @import '@/assets/styles/style.module.css';
-    @import '@/assets/styles/reset.module.css';
+    /* @import '@/assets/styles/reset.module.css'; */
     @import '@/assets/styles/footer.module.css';
-</style>
+</style> -->
 
