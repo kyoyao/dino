@@ -43,7 +43,7 @@
                     class="m-0 d-inline brown-font">服務區域</p>
             </h2>
             <div class="iframe-rwd mb-5">
-                <img class="service-map" src="./assets/images/map.jpg" />
+                <img class="service-map" src="@/assets/images/map.jpg" />
             </div>
 
         </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div
                     class="p-2 line-btn d-flex flex-column flex-md-row d-md-flex align-items-center justify-content-center">
-                    <img class="me-2" src="./assets/images/btn_base.png"/>
+                    <img class="me-2" src="@/assets/images/btn_base.png"/>
                     <span class="fs-7">加入LINE好友</span>
                 </div>
                 <div class="d-flex flex-column flex-md-row d-md-flex mt-2 ">
