@@ -31,7 +31,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 <a class="navbar-links" href="/service">服務範圍</a>
             </div>
             <div class=" p-4 link-container">
-                <a class="navbar-links" href="contact.html">聯絡我們</a>
+                <a class="navbar-links" href="/contact">聯絡我們</a>
             </div>
             <div class="p-4 link-container">
                 <a class="navbar-links" href="login.html">用戶登入</a>

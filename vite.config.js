@@ -3,6 +3,8 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+let proxyTargetLocal = { target: 'http://localhost:30000', changeOrigin: true, autoRewrite: true, secure: false};
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
@@ -12,6 +14,15 @@ export default defineConfig({
     }
   },
   server: {
-    port: 8080,
+    port: 8081,
+    proxy: {
+        '/api': { 
+          target: "http://127.0.0.1:9090", changeOrigin: true
+        },
+        '^/login': proxyTargetLocal,
+        '^/logout': proxyTargetLocal,
+        '^/public/api': proxyTargetLocal,
+        '^/resources': proxyTargetLocal
+    }
   },
 })

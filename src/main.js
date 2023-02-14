@@ -6,7 +6,11 @@ import router from './router'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import JQuery from "jquery/dist/jquery.min.js"
+import axios from 'axios'
 
+window.axios = axios;
+window.$ = JQuery;
 
 const app = createApp(App)
 

@@ -25,10 +25,10 @@
         </div>
         <div class="collapse navlink-container" id="navbarToggleExternalContent">
             <div class=" p-4 link-container">
-                <a class="navbar-links" href="#">服務範圍</a>
+                <a class="navbar-links" href="/service">服務範圍</a>
             </div>
             <div class=" p-4 link-container">
-                <a class="navbar-links" href="contact.html">聯絡我們</a>
+                <a class="navbar-links" href="/contact">聯絡我們</a>
             </div>
             <div class="p-4 link-container">
                 <a class="navbar-links" href="login.html">用戶登入</a>
@@ -102,6 +102,7 @@
                 <p>預約代丟服務每趟需14公升以上,若不足則以14公升計算<br /><br />
                     每週三、日為非營業時間,預約代丟與客服詢請在營業時間內安排</p>
             </div>
+            <!-- <button class="btn btn-primary" type="button" @click="save()"></button> -->
         </footer>
     </div>
 </body>
@@ -124,7 +125,13 @@ export default {
 		window.currentApp = this;
 	},
 	methods: {
-			
+        // save() { 
+        //     let url = '/api'
+        //     axios.get(url)
+        //       .then((res)=>{
+        //           //console.log("test:" + res)
+        //     })         
+        // },
 	}
 }
 </script>
