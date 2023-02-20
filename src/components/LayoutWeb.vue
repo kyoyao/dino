@@ -56,9 +56,12 @@
                     <img class="me-2" src="@/assets/images/btn_base.png"/>
                     <span class="fs-7">加入LINE好友</span>
                 </div>
-                <div class="d-flex flex-column flex-md-row d-md-flex mt-2 ">
-                    <span class="text-muted">電話 : 0917085865</span>
-                </div>
+                <ul class="nav flex-column mt-2">
+                    <li class="nav-item text-muted mb-2">信箱 : cs90019424@gmail.com</li>
+                    <li class="nav-item text-muted mb-2">電話 : 0917085865</li>
+                    <li class="nav-item text-muted mb-2">市話 : 02-23627542</li>
+                    <li class="nav-item text-muted">地址 : 台北市忠孝東路四段300號5樓</li>
+                </ul>
             </div>       
             <div class="col-4 mb-3">
                 <h5>服務</h5>

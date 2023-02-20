@@ -2,8 +2,13 @@
 <template>
 <LayoutWeb layoutType=3>
 <body>
-    <div class="charge-rwd pt-5">
-        <img class="charge-img" src="@/assets/images/charge_info.png" />
+    <div class="map-container">
+        <h2 class="d-flex justify-content-center sesson-title flex-wrap green-font pt-4">
+            代樂收<p class="m-0 d-inline brown-font">收費資訊</p>
+        </h2>
+        <div class="charge-rwd">
+            <img class="charge-img" src="@/assets/images/charge_info.png" />
+        </div>
     </div>
 </body>
 </LayoutWeb>
@@ -32,6 +37,7 @@ export default {
 
 <style scoped>
     .charge-rwd {
+        text-align: center;
         position: relative; 
         height: 60vh;
         margin: 3rem;

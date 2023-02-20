@@ -21,7 +21,9 @@ export default {
         window.currentApp = this;
     },
     methods: {
-
+      showModal () {
+        $('#serviceModal').show();
+      }
     }
 }
 </script>
