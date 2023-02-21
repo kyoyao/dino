@@ -12,10 +12,10 @@
             </div> -->
 
             <div class="iframe-rwd text-center">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1gCXV60UiV1ce6DcbBrxh6EjGpr78bIs&ehbc=2E312F" width="640" height="480"></iframe>               
+                <iframe :src="serviceArea" width="640" height="480"></iframe>               
             </div>
             <div class="mt-3">
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#serviceModal">檢視服務區域概況</button>
+                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#serviceModal">檢視服務區域概況</button>
             </div>
 
         </div>
@@ -44,7 +44,7 @@
         <div class="modal-content">
         <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">服務區域概況</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button> -->
         </div>
         <div class="modal-body">
             <!-- <div v-for="(obj, idx1) in dataList" :key="idx1"> -->
@@ -103,7 +103,7 @@
             <!-- </div> -->
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" @click="initData()">關閉</button>
         </div>
         </div>
     </div>
@@ -120,6 +120,7 @@ export default {
 	name: "Service",
 	data() {
 		return {
+            serviceArea:$config.serviceArea,
             loc:"",
             locInfo: undefined,
             //fakeData
@@ -176,8 +177,12 @@ export default {
         //           //console.log("test:" + res)
         //     })         
         // },
-        showModal () {
+        showModal() {
             $('#serviceModal').show();
+        },
+        initData() {
+            this.locInfo=undefined;
+            this.loc='';
         }
 	}
 }

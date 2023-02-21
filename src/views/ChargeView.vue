@@ -40,7 +40,7 @@ export default {
         text-align: center;
         position: relative; 
         height: 60vh;
-        margin: 3rem;
+        margin: 3rem 3rem 0 3rem;
     /* width: 50%; */
     /* overflow: hidden;*/
     }

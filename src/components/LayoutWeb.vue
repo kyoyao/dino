@@ -49,19 +49,20 @@
         <footer class="row border-top pt-3 mt-2" :class="{'pt-5': layoutType=='4', 'mt-5': layoutType=='4'}">
             <div class="col-4 mb-3">
                 <h5>聯絡我們</h5>
-                <div class="d-flex flex-column flex-md-row d-md-flex mb-2 text-muted" >
+                <!-- <div class="d-flex flex-column flex-md-row d-md-flex mb-2 text-muted" >
                     創生環保科技股份有限公司 
+                </div> -->
+                <div class="d-inline flex-column flex-md-row d-md-flex align-items-center justify-content-start">
+                    <a :href="lineLink" target="_blank"><img class="icon me-2" src="@/assets/images/icon_line.png"/></a>
+                    <a :href="fbLink" target="_blank"><img class="icon me-2" src="@/assets/images/icon_fb.png"/></a>
+                    <!-- <span class="fs-7">加入LINE好友</span> -->
                 </div>
-                <div class="p-2 line-btn d-flex flex-column flex-md-row d-md-flex align-items-center justify-content-center">
-                    <img class="me-2" src="@/assets/images/btn_base.png"/>
-                    <span class="fs-7">加入LINE好友</span>
-                </div>
-                <ul class="nav flex-column mt-2">
+                <!-- <ul class="nav flex-column mt-2">
                     <li class="nav-item text-muted mb-2">信箱 : cs90019424@gmail.com</li>
                     <li class="nav-item text-muted mb-2">電話 : 0917085865</li>
                     <li class="nav-item text-muted mb-2">市話 : 02-23627542</li>
                     <li class="nav-item text-muted">地址 : 台北市忠孝東路四段300號5樓</li>
-                </ul>
+                </ul> -->
             </div>       
             <div class="col-4 mb-3">
                 <h5>服務</h5>
@@ -95,7 +96,8 @@ export default {
 	props: ['layoutType'],
 	data() {
 		return {
-			
+			fbLink:$config.fbLink,
+            lineLink:$config.lineLink,
 		};
 	},
 	components: {
@@ -113,6 +115,11 @@ export default {
 <style>
     @import '../assets/styles/style.module.css';
     @import '../assets/styles/reset.module.css';
+    @media screen and (max-width:768px) {
+        .icon {
+            margin: 0px 0.5rem 0.5rem 0px !important;
+        }
+    }
 </style>
 
 <style v-if="layoutType==='1'">
